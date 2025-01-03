@@ -12,6 +12,8 @@ This method scales pixel values to a specific range, typically [0, 1] or [0, 255
 
 import numpy as np
 
+image = "from image folder"
+
 def min_max_normalize(image):
     image_norm = (image - np.min(image)) / (np.max(image) - np.min(image))
     return image_norm
